@@ -7,9 +7,11 @@ Rails.application.routes.draw do
   # -list of resources can be seen: index
   # -single resource can be seen: show
   # -create a new resource
-  get "todos", to: "todos#index"
-  get "todos/create", to:"todos#create"
-  get "todos/:id", to: "todos#show"
 
+  # get "todos", to: "todos#index"
+  # post "todos", to:"todos#create"
+  # get "todos/:id", to: "todos#show"
+
+  resources :todos
 
 end
