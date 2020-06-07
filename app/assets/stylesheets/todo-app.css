@@ -44,7 +44,7 @@ body {
 }
 
 .AddTodo {
-    displpay: flex;
+    display: flex;
     height: 32px;
     align-items: stretch;
     margin-bottom: 24px;
@@ -108,11 +108,9 @@ body {
     font-size: 10px;
     color: rgb(103, 89, 123);
     margin-left: 30px;
-}
-
-.TodoItem-container {
-    display: flex;
+    display: inline-flex;
     padding: 2px 8px;
+    height: 19px;
     align-items: center;
 }
 
@@ -125,11 +123,6 @@ body {
 .TodoItem-delete {
     visibility: hidden;
     margin-left: 16px; 
-}
-
-.TodoItem-delete > img {
-    width: 16px;
-    visibility: visible;
 }
 
 .TodoItem-container:hover .TodoItem-delete {
