@@ -28,8 +28,10 @@
             </p>
           <% end %>
           
-          <a  href="javascript:void(0)" class="TodoItem-delete">
-            <img src="bin.svg">
+          <a href="javascript:void(0)">
+            <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
+              <%= image_submit_tag "bin.svg", class: "TodoItem-delete" %>
+            <% end %>
           </a>
         </div>
       </li>
