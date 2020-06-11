@@ -132,3 +132,7 @@ body {
 .TodoItem-container:hover {
     background-color: #F1EDF7;
 }
+
+.TodoItem-dueDate{
+    margin-left: 10px;
+}
